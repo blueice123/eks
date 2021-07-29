@@ -2541,7 +2541,7 @@ spec:
         - containerPort: 5557
         - containerPort: 5558
       nodeSelector:
-        k8s: admin
+        k8s: "admin"
         volumeMounts:
         - mountPath: /shared
           name: static-files
@@ -2606,7 +2606,7 @@ spec:
         ports:
         - containerPort: 6379
       nodeSelector:
-        k8s: admin
+        k8s: "admin"
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
@@ -2667,7 +2667,7 @@ spec:
         - containerPort: 8081
         - containerPort: 8084
       nodeSelector:
-        k8s: admin
+        k8s: "admin"
         readinessProbe:
           httpGet:
             path: /healthz
@@ -2764,7 +2764,7 @@ spec:
         - containerPort: 8080
         - containerPort: 8083
       nodeSelector:
-        k8s: admin
+        k8s: "admin"
         readinessProbe:
           httpGet:
             path: /healthz
@@ -2858,7 +2858,7 @@ spec:
         ports:
         - containerPort: 8082
       nodeSelector:
-        k8s: admin
+        k8s: "admin"
         readinessProbe:
           httpGet:
             path: /healthz
