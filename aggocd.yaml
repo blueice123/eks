@@ -2535,8 +2535,6 @@ spec:
         - containerPort: 5556
         - containerPort: 5557
         - containerPort: 5558
-      nodeSelector:
-        k8s: "admin"
         volumeMounts:
         - mountPath: /shared
           name: static-files
