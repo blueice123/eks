@@ -47,6 +47,9 @@ kubectl -n kube-system get cm kube-proxy-config -o yaml |sed 's/metricsBindAddre
  - ID/PW: admin / test123
 
 
+
+
+
  
 === 아래거를 설정하면 IAM을 통해 CW logs agent로 CW logs를 보내는 설정임
  - 아래 내용 설정 전에 how_to_install_EFK.md 파일을 배포하면 amazon-cloudwatch namespace가 만들어짐
